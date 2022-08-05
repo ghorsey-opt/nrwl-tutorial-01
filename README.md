@@ -1,6 +1,26 @@
 
 
 # MyOrg
+<https://www.youtube.com/watch?v=o-9iUhUkE4o&list=PLakNactNC1dH38AfqmwabvOszDmKriGco&index=5>
+```bash
+npx nx affected:test # test everything affected by a change
+npx nx dep-graph # show a dependency graph of all projects
+npx nx affected:dep-graph # show what dependencies are affected by a change
+
+npx nx g @nrwl/workspace:lib {name} # Generate a library
+npx nx serve {app name} # serve api or my-site
+
+npm i @nrwl/express --save-dev # Install nrwl library to generate/manage an express app
+npx nx g @nrwl/express:app --help # See help options
+npx nx g @nrwl/express:app {app name} --frontendPRoject={project name} # Create an Express app and configure the proxy from the FE app
+
+npm i @nrwl/react --save-dev
+npx nx g @nrwl/react:app # to generate a react app
+npx nx g @nrwl/react:lib {project name} # create a React library
+npx nx g @nrwl/react:component --project {project name} {component name} # generate a component in a named project
+
+npx nx serve {project name} # to serve the specific project
+```
 
 This project was generated using [Nx](https://nx.dev).
 

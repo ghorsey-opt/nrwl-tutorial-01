@@ -1,7 +1,7 @@
-import { apiInterface } from './api-interface';
+import { ApiResponse, API_URL } from './api-interface';
 
-describe('apiInterface', () => {
+describe('API_URL', () => {
   it('should work', () => {
-    expect(apiInterface()).toEqual('api-interface');
+    expect(API_URL).toEqual('/api/message');
   });
 });

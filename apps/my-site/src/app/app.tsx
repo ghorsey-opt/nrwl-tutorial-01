@@ -4,6 +4,7 @@ import { PageTitle } from '@my-org/ui-header';
 import { useState, useEffect } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import { API_URL, ApiResponse } from '@my-org/api-interface'
+import NxWelcome from './nx-welcome';
 
 export function App() {
   const [apiResponse, setApiResponse] = useState<ApiResponse>({ message: 'Loading...' });
@@ -18,7 +19,7 @@ export function App() {
         {apiResponse.message}
       </p>
       <div />
-
+      <NxWelcome title="my-site" />
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
       {/* Feel free to move and update them to fit your needs */}
